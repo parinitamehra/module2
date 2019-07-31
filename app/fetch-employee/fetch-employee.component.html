@@ -1,0 +1,20 @@
+<p>fetch-employee works!</p>
+<table  border="1" cellpadding="10">
+    <tr  >
+      <th >Eid</th><th>Ename</th><th>Address</th><th>Gender</th>
+    </tr>
+    <tr *ngFor="let e of employee">
+    <td>{{e.eid}}</td>
+    <td>
+       {{ e.ename}}
+    </td>
+    
+    <td>{{e.eaddress}}</td>
+    
+    <td>{{e.gender}}</td>
+
+    </tr>
+    <!-- <tr *ngIf="!employee||employee.length==0">
+      <td colspan="5">No.of employees to display</td>
+    </tr> -->
+  </table> 
